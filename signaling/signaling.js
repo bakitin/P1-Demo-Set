@@ -8,7 +8,7 @@ class Signaling {
     async connect(handleServerDown) {
 
         return new Promise((resolve, reject) => {
-            this.socket = new WebSocket("wss://unshackle-think-return.ngrok-free.dev");
+            this.socket = new WebSocket("wss://p1-websocket.fly.dev/");
 
             this.socket.onopen = () => {
                 console.log("WebSocket conectado al servidor");
